@@ -1,0 +1,90 @@
+python ../model/pos.py --data ark --seed 3 --cuda 7 --path ../_app --log ./log/log.lstm.3.4.txt --fix --lstm
+ark
+epoch 41
+dev all 84.26 / vec wiv 85.94 oov 70.73
+tes all 84.68 / vec wiv 86.14 oov 72.33
+python ../model/pos.py --data ark --seed 4 --cuda 7 --path ../_app --log ./log/log.lstm.3.4.txt --fix --lstm
+ark
+epoch 41
+dev all 84.03 / vec wiv 85.83 oov 69.61
+tes all 84.58 / vec wiv 86.06 oov 72.07
+python ../model/pos.py --data t_pos --seed 3 --cuda 7 --path ../_app --log ./log/log.lstm.3.4.txt --fix --lstm
+t_pos
+epoch 40
+dev all 82.87 / vec wiv 83.90 oov 68.46
+tes all 81.49 / vec wiv 82.73 oov 66.85
+python ../model/pos.py --data t_pos --seed 4 --cuda 7 --path ../_app --log ./log/log.lstm.3.4.txt --fix --lstm
+t_pos
+epoch 41
+dev all 83.27 / vec wiv 84.28 oov 69.13
+tes all 82.06 / vec wiv 83.53 oov 64.61
+python ../model/pos.py --data dcu --seed 3 --cuda 7 --path ../_app --log ./log/log.lstm.3.4.txt --fix --lstm
+dcu
+epoch 43
+dev all 81.79 / vec wiv 81.91 oov 78.22
+tes all 82.37 / vec wiv 82.89 oov 70.97
+python ../model/pos.py --data dcu --seed 4 --cuda 7 --path ../_app --log ./log/log.lstm.3.4.txt --fix --lstm
+dcu
+epoch 30
+dev all 81.82 / vec wiv 81.95 oov 78.22
+tes all 81.77 / vec wiv 82.19 oov 72.58
+python ../model/ner.py --data wnut --seed 3 --cuda 7 --path ../_app --log ./log/log.lstm.3.4.txt --fix --lstm
+wnut
+epoch 17
+dev all 48.96 / vec wiv 50.59 oov 31.86
+tes all 36.98 / vec wiv 41.45 oov 18.18
+python ../model/ner.py --data wnut --seed 4 --cuda 7 --path ../_app --log ./log/log.lstm.3.4.txt --fix --lstm
+wnut
+epoch 21
+dev all 50.48 / vec wiv 51.83 oov 36.67
+tes all 40.12 / vec wiv 43.54 oov 25.77
+python ../model/ner.py --data zhang --seed 3 --cuda 7 --path ../_app --log ./log/log.lstm.3.4.txt --fix --lstm
+zhang
+epoch 14
+dev all 68.10 / vec wiv 70.84 oov 41.40
+tes all 69.09 / vec wiv 71.76 oov 41.19
+python ../model/ner.py --data zhang --seed 4 --cuda 7 --path ../_app --log ./log/log.lstm.3.4.txt --fix --lstm
+zhang
+epoch 12
+dev all 67.54 / vec wiv 70.47 oov 40.27
+tes all 67.83 / vec wiv 70.54 oov 41.34
+python ../model/ner.py --data bc2gm --seed 3 --cuda 7 --path ../_app --log ./log/log.lstm.3.4.txt --fix --lstm --batch 500
+bc2gm
+epoch 41
+dev all 79.30 / vec wiv 79.49 oov 78.57
+tes all 77.89 / vec wiv 77.74 oov 78.34
+python ../model/ner.py --data bc2gm --seed 4 --cuda 7 --path ../_app --log ./log/log.lstm.3.4.txt --fix --lstm --batch 500
+bc2gm
+epoch 46
+dev all 79.49 / vec wiv 79.58 oov 79.12
+tes all 78.12 / vec wiv 78.39 oov 77.28
+python ../model/ner.py --data bc4chemd --seed 3 --cuda 7 --path ../_app --log ./log/log.lstm.3.4.txt --fix --lstm --batch 500
+bc4chemd
+epoch 40
+dev all 85.29 / vec wiv 87.25 oov 75.68
+tes all 85.92 / vec wiv 88.02 oov 76.71
+python ../model/ner.py --data bc4chemd --seed 4 --cuda 7 --path ../_app --log ./log/log.lstm.3.4.txt --fix --lstm --batch 500
+bc4chemd
+epoch 41
+dev all 85.37 / vec wiv 87.33 oov 75.77
+tes all 86.15 / vec wiv 88.33 oov 76.53
+python ../model/ner.py --data bc5cdr --seed 3 --cuda 7 --path ../_app --log ./log/log.lstm.3.4.txt --fix --lstm --batch 500
+bc5cdr
+epoch 40
+dev all 86.71 / vec wiv 87.17 oov 77.68
+tes all 84.91 / vec wiv 85.92 oov 65.26
+python ../model/ner.py --data bc5cdr --seed 4 --cuda 7 --path ../_app --log ./log/log.lstm.3.4.txt --fix --lstm --batch 500
+bc5cdr
+epoch 37
+dev all 86.51 / vec wiv 87.11 oov 74.43
+tes all 84.46 / vec wiv 85.50 oov 63.73
+python ../model/ner.py --data ncbi_disease --seed 3 --cuda 7 --path ../_app --log ./log/log.lstm.3.4.txt --fix --lstm --batch 500
+ncbi_disease
+epoch 33
+dev all 84.99 / vec wiv 85.39 oov 68.42
+tes all 82.78 / vec wiv 83.19 oov 76.11
+python ../model/ner.py --data ncbi_disease --seed 4 --cuda 7 --path ../_app --log ./log/log.lstm.3.4.txt --fix --lstm --batch 500
+ncbi_disease
+epoch 30
+dev all 84.96 / vec wiv 85.15 oov 76.47
+tes all 82.52 / vec wiv 82.87 oov 76.64

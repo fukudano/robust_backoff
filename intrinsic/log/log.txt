@@ -1,0 +1,4 @@
+L 7, R 10, sim jaccard, epoch 49
+cos_dev 54.61
+CARD all 47.6, wiv 55.5, oov 35.3 (OOV: 0.0)
+TOEFL 37.5
